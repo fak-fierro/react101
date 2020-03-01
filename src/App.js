@@ -48,16 +48,17 @@ function App() {
                 {tasks &&
                   tasks.map(task => {
                     return (
-                      <li className={`task-list-item status-${task.status}`} key="{ task.id }">
+                      <li
+                        className={`task-list-item status-${task.status}`}
+                        key="{ task.id }"
+                      >
                         <span className="icon-check">
                           <i
                             className="fa fa-check-circle-o"
                             aria-hidden="true"
                           ></i>
                         </span>
-                        <strong className="title">
-                          {task && task.title}
-                        </strong>
+                        <strong className="title">{task && task.title}</strong>
                         <span className="icon-rm">
                           <i className="fa fa-trash-o" aria-hidden="true"></i>
                         </span>
